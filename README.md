@@ -3,7 +3,6 @@
 This project is a **Certificate Management Module** that is part of the **Placement Management System**.  
 It enables efficient handling of student certificates with **CRUD operations** using **Spring Boot**, **PostgreSQL**, and **Postman** for API testing.
 
-
 ## Features
 
 - Add, view, update, and delete certificates  
@@ -43,7 +42,6 @@ It enables efficient handling of student certificates with **CRUD operations** u
   <img src="https://img.shields.io/badge/DELETE-DC3545?style=for-the-badge&logo=postman&logoColor=white" alt="DELETE" />
 </p>
 
-
 > These endpoints support full CRUD (Create, Read, Update, Delete) operations for managing certificate data.
 
 | Method | Endpoint | Description |
@@ -64,7 +62,7 @@ It enables efficient handling of student certificates with **CRUD operations** u
   "expiryDate": "2028-01-15"
 }
 ```
-✅ Use POST → http://localhost:8083/certificates to add new certificates.
+✅ Use POST → http://localhost:8083/certificates to add new certificates.  
 ✅ Use PUT → http://localhost:8083/certificates/{id} to update.
 
 ## How It Works
@@ -73,65 +71,67 @@ It enables efficient handling of student certificates with **CRUD operations** u
 3. You can test all endpoints easily using **Postman**.  
 
 **DI need to be added :**
-
-JDBC API
-
-Spring Data JPA
-
-PostgreSQL Driver
-
-Rest Repositories
-
-Spring web
+JDBC API  
+Spring Data JPA  
+PostgreSQL Driver  
+Rest Repositories  
+Spring web  
 
 ## How to Run
 
-### 1.Clone the repository
-
+### 1. Clone the repository
 ```bash
 git clone https://github.com/PRIYAtechky/PLACEMENT-MANAGEMENT-SYSTEM_certificate-module.git
 cd PLACEMENT-MANAGEMENT-SYSTEM_certificate-module
 ```
 
-### 2.Open the project
+### 2. Open the project
+Import the project into **Spring Tool Suite (STS)** or **IntelliJ IDEA** as a **Maven Project**.
 
-Import the project into Spring Tool Suite (STS) or IntelliJ IDEA as a Maven Project.
-
-### 3.Configure the Database
-
+### 3. Configure the Database
 Open pgAdmin or PostgreSQL CLI and create a database:
-
 ```mysql
 CREATE DATABASE certificate_db;
 ```
 
-Update your credentials in application.properties:
-
+Update your credentials in `application.properties`:
 ```properties
 spring.datasource.url=jdbc:postgresql://localhost:5432/certificate_db
 spring.datasource.username=postgres
 spring.datasource.password=postgres
 ```
 
-### 4.Build and Run the Application
-
+### 4. Build and Run the Application
 ```bash
 mvn spring-boot:run
 ```
-or simply click Run → Run As → Spring Boot App in your IDE.
+or simply click **Run → Run As → Spring Boot App** in your IDE.
 
-### 5.Access the Application
+### 5. Access the Application
+Base URL:  
+```http
+http://localhost:8083/certificates
+```
 
-Base URL: ``` http://localhost:8083/certificate```
+### 6. Test API Endpoints using Postman
+Use the following methods for testing:
+- **POST** → Add Certificate  
+- **GET** → View Certificates  
+- **PUT** → Update Certificate  
+- **DELETE** → Remove Certificate  
 
-Test API endpoints using Postman for:
+### 7. Verify Database Entries
+Open **pgAdmin** or any SQL client and check:
+```sql
+SELECT * FROM Table_Name;
+```
 
-```POST``` → Add Certificate
+### 8. Common Issues to Check
+- Ensure PostgreSQL is running on port **5432**  
+- Verify correct credentials in `application.properties`  
+- Check that port **8083** is not occupied  
+- Rebuild project if dependencies fail to load  
 
-```GET``` → View Certificates
-
-```PUT``` → Update Certificate
-
-```DELETE``` → Remove Certificate
-
+---
+*Created and maintained by **PADMAPRIYA** as part of the **TNSIF Training Program.***
 
