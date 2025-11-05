@@ -34,10 +34,17 @@ It enables efficient handling of student certificates with **CRUD operations** u
 | Security | Spring Security |
 | Language | Java |
 
----
-
-
 ## API Endpoints
+
+<p align="left">
+  <img src="https://img.shields.io/badge/POST-0078D4?style=for-the-badge&logo=postman&logoColor=white" alt="POST" />
+  <img src="https://img.shields.io/badge/GET-28A745?style=for-the-badge&logo=postman&logoColor=white" alt="GET" />
+  <img src="https://img.shields.io/badge/PUT-FFC107?style=for-the-badge&logo=postman&logoColor=white" alt="PUT" />
+  <img src="https://img.shields.io/badge/DELETE-DC3545?style=for-the-badge&logo=postman&logoColor=white" alt="DELETE" />
+</p>
+
+
+> These endpoints support full CRUD (Create, Read, Update, Delete) operations for managing certificate data.
 
 | Method | Endpoint | Description |
 |--------|-----------|-------------|
@@ -57,5 +64,7 @@ It enables efficient handling of student certificates with **CRUD operations** u
   "expiryDate": "2028-01-15"
 }
 
+✅ Use POST → http://localhost:8083/certificates to add new certificates.
+✅ Use PUT → http://localhost:8083/certificates/{id} to update.
 
 
