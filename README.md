@@ -1,4 +1,4 @@
-# placement-management-system-certificate-module 🎓
+# Placement Management System Certificate Module 🎓
 
 This project is a **Certificate Management Module** that is part of the **Placement Management System**.  
 It enables efficient handling of student certificates with **CRUD operations** using **Spring Boot**, **PostgreSQL**, and **Postman** for API testing.
