@@ -136,4 +136,3 @@ SELECT * FROM Table_Name;
 ---
 
 *Created and maintained by **PADMAPRIYA** as part of the **TNSIF Training Program.***
-
